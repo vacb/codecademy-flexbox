@@ -1,0 +1,289 @@
+
+/* Reset padding and margin from defaults*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+    text-align: center;
+}
+
+/* HEADINGS */
+h1, h2 {
+    font-family: "grand hotel", sans-serif;
+}
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    position: relative;   
+}
+
+@media only screen and (min-width: 480px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+@media only screen and (min-width: 800px) {
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    color: #a5a58d;
+    margin-top: 1rem;
+}
+@media only screen and (min-width: 480px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width: 800px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+/* NAV BAR */
+nav {
+    background-color: #a5a58d;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-cupcake {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px; 
+}
+li {
+    list-style-type: none;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+@media only screen and (min-width: 480px) {
+    ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    }
+    li {
+        width: auto;
+        padding: 0 20px;      
+    }
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #fff;   
+}
+
+
+/* HEADER STYLES */
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+header::before {   
+    /* Pseudo elements need to have their content property set to an empty string to show up */ 
+    content: "";
+    background-image: url(../images/cake-shop.jpg);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    background-size: cover;
+    background-position: center left;
+}
+header p {
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+p {
+    padding: 0 10px;
+}
+main {
+    /*padding: 0 10px;*/
+    /*margin: 0 10%;*/
+}
+
+/* PRODUCT SECTION */
+.cake-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-image: url("../images/chocolate.jpg");
+    background-size: cover;
+    padding: 20px 0; 
+}
+.cake-card {  
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 10px;
+}
+/* Trying to get cake image as background image
+.cake1 {
+    background-image: url("../images/flower-cake.jpg");
+    background-size: cover;
+}
+.cake2 {
+    background-image: url("../images/cupcakes.jpg");
+    background-size: cover;
+}
+.cake3 {
+    background-image: url("../images/green-stripe-cake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cake4 {
+    background-image: url("../images/cherry-cupcake.jpg");
+    background-size: cover;
+}
+*/
+.cake-image-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.cake-image {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    margin-top: -25%;
+}
+.description {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color: #a5a58d;
+}
+.product-name {
+    color: #fff;
+    padding: 10px;
+    flex: 1;
+}
+.product-info {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #fff;
+    padding: 10px;
+    flex: 1;
+}
+
+/* TEAM SECTION */
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    background-color:  #eddcd2;
+    background-size: cover;
+    padding: 10px 0;
+}
+.team-member {
+    color: #fff;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Profile image */
+.profile-image-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid #a5a58d;
+}
+.profile-pic {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;  
+}
+
+/* CONTACT SECTION */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    color: #fff;
+}
+@media only screen and (min-width: 480px) {
+    .contact-container {
+        font-size: 1rem;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .contact-container {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.2rem;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.contact-card-sub1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #b7b7a4;
+}
+.contact-card-sub2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.contact-card {   
+    padding: 10px 10px;
+    background-color: #b7b7a4;
+    flex: 1 1;
+}
+.cupcake-icon {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+   
+}
+/* FOOTER SECTION */
+footer {
+    font-size: .8rem;
+    background-color: #cb997e;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
