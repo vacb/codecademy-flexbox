@@ -274,7 +274,7 @@ main {
     justify-content: center;
     align-items: center;
     flex: 1;
-    background-color: #b7b7a4;
+    background-color: #ddbea9;
 }
 .contact-card-sub2 {
     display: flex;
@@ -283,7 +283,7 @@ main {
 }
 .contact-card {   
     padding: 10px 10px;
-    background-color: #b7b7a4;
+    background-color: #ddbea9;
     flex: 1 1;
 }
 .cupcake-icon {
@@ -295,8 +295,9 @@ main {
 /* FOOTER SECTION */
 footer {
     font-size: .8rem;
-    background-color: #cb997e;
+    background-color: #a5a58d;
     padding: 10px;
     margin-top: 10px;
     text-align: left;
+    color: #fff;
 }
